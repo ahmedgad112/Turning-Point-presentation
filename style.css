@@ -1,0 +1,148 @@
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+
+        }
+
+
+
+        /* تأثيرات شياكة لكروت التيم */
+        /* --- تعديلات الفخامة لسكشن الفريق --- */
+
+
+
+        #team {
+            background: radial-gradient(circle at center, #ffffff 0%, #f8f9fa 100%);
+            /* خلفية متدرجة ناعمة لفخامة أكثر */
+        }
+
+
+
+        .team-card {
+            border: 2px solid transparent;
+            /* إطار شفاف كداية */
+            border-radius: 25px;
+            /* حواف أكثر دائرية */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            /* ظل ناعم جداً */
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            /* أنيميشن أكثر سلاسة */
+            background: #fff;
+            overflow: hidden;
+            /* لمنع أي محتوى من الخروج عن الحواف */
+        }
+
+
+
+        .team-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            /* حركة أعلى وأكبر قليلاً */
+            box-shadow: 0 20px 40px rgba(13, 110, 253, 0.1);
+            /* ظل ملون خفيف جداً بلون التيم */
+            border-color: rgba(13, 110, 253, 0.2);
+            /* إظهار إطار ملون خفيف */
+        }
+
+
+        .team-img-wrapper {
+            width: 180px;
+            /* تكبير قطر الصورة */
+            height: 180px;
+            /* تكبير قطر الصورة */
+            margin: 0 auto;
+            border-radius: 50%;
+            padding: 8px;
+            /* مسافة داخلية أكبر */
+            border: 4px solid #f0f0f0;
+            /* إطار أولي فاتح */
+            transition: all 0.4s ease-in-out;
+            background-color: #fff;
+            z-index: 2;
+            position: relative;
+        }
+
+
+        .team-card:hover .team-img-wrapper {
+            border-color: #0d6efd;
+            /* تغيير لون الإطار عند الـ Hover */
+            transform: rotate(5deg);
+            /* دوران خفيف جداً للصورة عند الـ Hover للفخامة */
+        }
+
+        .team-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* تعديلات النصوص للشياكة */
+        .team-card h5 {
+            font-size: 1.4rem;
+            /* تكبير اسم العضو */
+            color: #212529;
+        }
+
+        .team-card .text-primary {
+            font-size: 0.95rem;
+            /* تكبير الدور الوظيفي قليلاً */
+        }
+
+
+        .team-card p.text-muted {
+            line-height: 1.6;
+            /* زيادة تباعد الأسطر للشرح */
+        }
+
+
+        /* تنسيق أيقونات التواصل */
+        .team-card .bi {
+            font-size: 1.3rem;
+            /* تكبير الأيقونات */
+            color: #6c757d;
+            transition: color 0.3s ease;
+        }
+
+
+        .team-card .bi:hover {
+            color: #0d6efd;
+            /* تغيير لون الأيقونة عند الـ Hover */
+        }
+
+        /* كروت الميزات */
+        .feature-box {
+            border-radius: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            background: #fff;
+            transition: all 0.2s ease;
+        }
+
+
+        .feature-box:hover {
+            background: linear-gradient(145deg, #ffffff, #f1f5f9);
+        }
+
+
+/* ==========================================================================
+   الـ Media Queries الذكية لجعل كودك ريسبونسيف بالكامل
+   ========================================================================== */
+
+/* شاشات التابلت والأجهزة المتوسطة (Tablets) */
+@media (max-width: 991px) {
+    .team-img-wrapper {
+        width: 150px;
+        /* تصغير حجم الدائرة لت   
+ناسب الشاشات المتوسطة */
+        height: 150px;
+    }
+}
+
+/* شاشات الموبايل الصغيرة (Mobile) */
+@media (max-width: 575px) { 
+    .team-img-wrapper {
+        width: 120px;
+        /* تصغير حجم الدائرة لتناسب الشاشات الصغيرة */
+        height: 120px;
+    }   
+}
