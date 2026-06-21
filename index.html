@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
     <!-- Google Fonts (Cairo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;650;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;650;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -22,32 +22,36 @@
 <body>
 
     <!-- 1. الـ Hero Section (الافتتاحية) -->
-    <section class="py-5 text-center bg-white border-bottom shadow-sm">
+    <section class="hero-section py-5 text-center">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <!-- شارة صغيرة فوق العنوان بتدي شكل مودرن -->
-                    <span class="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 mb-3 fs-6">Graduation
-                        Project
-                        2026</span>
-                    <h1 class="fw-bold text-dark display-5 mb-3">Turning Point</h1>
-                    <p class="lead text-muted mb-4 fs-5">
-                        هنا بنكتب سطرين بساط جداً بيشرحوا الفكرة العامة للمشروع بشكل جذاب ومقنع للجنة. الزيتونة في سطر
-                        واحد!
+                    <span class="badge tech-badge rounded-pill px-3 py-2 mb-3 fs-6">
+                        <i class="bi bi-terminal me-1"></i> Graduation Project 2026
+                    </span>
+                    <h1 class="fw-bold hero-title display-5 mb-3">Turning Point</h1>
+                    <p class="lead hero-subtitle mb-4 fs-5">
+                        Zero Down Time Cloud Services Platform <span class="tech-tag">(ZDCSP)</span>
                     </p>
-                    <a href="#features" class="btn btn-primary btn-lg px-4 rounded-pill me-2">Learn More</a>
-                    <a href="#team" class="btn btn-outline-secondary btn-lg px-4 rounded-pill">Team Members</a>
+                    <a href="#features" class="btn btn-tech-primary btn-lg px-4 rounded-pill me-2">
+                        <i class="bi bi-diagram-3 me-1"></i> Learn More
+                    </a>
+                    <a href="#team" class="btn btn-tech-outline btn-lg px-4 rounded-pill">
+                        <i class="bi bi-people me-1"></i> Team Members
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 2. سكشن العناوين والمميزات -->
-    <section id="features" class="py-5 bg-light">
+    <section id="features" class="features-section py-5">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="fw-bold text-dark">About the Project</h2>
-                <p class="text-muted">Key pillars that summarize the idea and objectives of the platform</p>
+                <span class="section-label d-inline-block mb-2">// platform.core</span>
+                <h2 class="fw-bold section-title">About the Project</h2>
+                <p class="section-desc">Key pillars that summarize the idea and objectives of the platform</p>
             </div>
 
             <div class="row g-4 text-center">
@@ -58,10 +62,10 @@
                             style="width: 60px; height: 60px;">
                             <i class="bi bi-rocket-takeoff fs-3"></i>
                         </div>
-                        <h4 class="fw-bold mb-2">Project Vision</h4>
-                        <p class="text-muted small">Here you can write a simple title or sub-idea about the speed,
-                            efficiency, or smart goal
-                            of the project.</p>
+                        <h4 class="fw-bold mb-2">Zero Down Network (ZDN)</h4>
+                        <p class="text-muted small">Automating paths and securing them through a diamond mesh structure
+                            that connects Cisco and Arista devices. This ensures that data keeps flowing through OSPF
+                            and HSRP protocols without dropping a single packet, even if an entire router fails.</p>
                     </div>
                 </div>
                 <!-- كارت 2 -->
@@ -71,10 +75,11 @@
                             style="width: 60px; height: 60px;">
                             <i class="bi bi-shield-check fs-3"></i>
                         </div>
-                        <h4 class="fw-bold mb-2">Security and Control</h4>
-                        <p class="text-muted small">A simple explanation in two lines about how the system provides a
-                            smart and secure
-                            control panel for users.</p>
+                        <h4 class="fw-bold mb-2">Zero Down Service (ZDS)</h4>
+                        <p class="text-muted small">Building an integrated computing environment (HCI) based on a
+                            Proxmox VE stack to gather and manage resources. The platform allows efficient load
+                            distribution and automatically restarts virtual servers in fractions of a second as soon as
+                            any physical hardware failure is detected.</p>
                     </div>
                 </div>
                 <!-- كارت 3 -->
@@ -84,31 +89,82 @@
                             style="width: 60px; height: 60px;">
                             <i class="bi bi-graph-up-arrow fs-3"></i>
                         </div>
-                        <h4 class="fw-bold mb-2">High Efficiency</h4>
-                        <p class="text-muted small">Explanation of how the project simplifies management and generates
-                            accurate reports or data that are important to
-                            the committee.</p>
+                        <h4 class="fw-bold mb-2">Ceph Distributed Storage</h4>
+                        <p class="text-muted small">Building an integrated computing environment (HCI) based on a
+                            Proxmox VE stack to gather and manage resources. The platform allows efficient load
+                            distribution and automatically restarts virtual servers in fractions of a second as soon as
+                            any physical hardware failure is detected.</p>
+                    </div>
+                </div>
+
+                <!-- كارت 4 -->
+                <div class="col-md-4">
+                    <div class="p-4 feature-box h-100 shadow-sm">
+                        <div class="bg-info-subtle text-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="bi bi-arrow-repeat fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Live Migration</h4>
+                        <p class="text-muted small">Applying the 'live migration' technology to move servers and running
+                            systems between physical devices in real-time. The processor and RAM records are transferred
+                            over a 10-gigabit Arista network, allowing hardware maintenance without the end user even
+                            noticing any downtime.</p>
+                    </div>
+                </div>
+
+                <!-- كارت 5 -->
+                <div class="col-md-4">
+                    <div class="p-4 feature-box h-100 shadow-sm">
+                        <div class="bg-info-subtle text-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="bi bi-wifi fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Seamless Roaming (BATMAN-adv)</h4>
+                        <p class="text-muted small">Developing a wireless mesh network managed by the BATMAN-adv
+                            protocol, which runs inside the system kernel at layer two. This innovation allows mobile
+                            devices and VoIP calls to switch between access points (APs) completely smoothly and in less
+                            than $50 ext{ms}$ without any signal loss.</p>
+                    </div>
+                </div>
+
+                <!-- كارت 6 -->
+                <div class="col-md-4">
+                    <div class="p-4 feature-box h-100 shadow-sm">
+                        <div class="bg-info-subtle text-info rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="bi bi-cloud-check fs-3"></i>
+                        </div>
+                        <h4 class="fw-bold mb-2">Sovereign Cloud Platform</h4>
+                        <p class="text-muted small">A smart control panel fully developed locally using Laravel and
+                            Tailwind CSS, directly connected to the Proxmox API. It gives users an experience similar to
+                            global hosting companies (like Hostinger) for creating servers and managing email and domain
+                            naming (DNS) automatically, with 100% complete digital sovereignty.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="team" class="py-5 bg-white">
+    <section class="team-section py-5">
         <div class="container py-5"> <!-- زيادة الـ Padding الرأسي للسيكشن -->
-            <div class="text-center mb-5pb-3"> <!-- زيادة الـ Margin السفلي قليلاً -->
-                <h1 class="fw-bold text-dark display-6">Team Leader</h1> <!-- تكبير عنوان السيكشن -->
+            <div class="text-center mb-5 pb-3">
+                <span class="section-label d-inline-block mb-2">// network.leadership</span>
+                <h1 class="fw-bold section-title display-6">Team Leader</h1>
             </div>
-            <!-- الـ Grid المتناسق للكروت -->
-            <div class="row g-5 justify-content-center"> <!-- زيادة التباعد بين الكروت -->
-                <!-- كارت العضو 2 -->
-                <div class="col-sm-8 col-md-6 col-lg-4">
+            <div class="row g-5 justify-content-center">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
                     <div class="card team-card p-5 text-center">
-                        <div class="team-img-wrapper mb-4">
-                            <img src="photo/gd3.jpeg" alt="Ibraheem Gadaa">
-                        </div>
+                        <a href="members/ibraheem-gadaa.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-4">
+                                <img src="photo/gd3.jpeg" alt="Ibraheem Gadaa">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Ibraheem Gadaa</h5>
                         <p class="text-primary small fw-semibold mb-3">Network Leader</p>
+                        <a href="members/ibraheem-gadaa.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,57 +173,80 @@
 
 
     <!-- 4. سكشن مدرين الفريق -->
-    <section id="team" class="py-5 bg-white">
+    <section class="team-section py-5">
         <div class="container py-5"> <!-- زيادة الـ Padding الرأسي للسيكشن -->
-            <div class="text-center mb-5pb-3"> <!-- زيادة الـ Margin السفلي قليلاً -->
-                <h1 class="fw-bold text-dark display-6">Co-Leaders</h1> <!-- تكبير عنوان السيكشن -->
+            <div class="text-center mb-5 pb-3">
+                <span class="section-label d-inline-block mb-2">// software.leadership</span>
+                <h1 class="fw-bold section-title display-6">Co-Leaders</h1>
             </div>
 
-            <!-- الـ Grid المتناسق للكروت -->
-            <div class="row g-5 justify-content-center"> <!-- زيادة التباعد بين الكروت -->
+            <div class="row g-5 justify-content-center">
 
-                <!-- كارت العضو 1 -->
-                <div class="col-sm-8 col-md-6 col-lg-4"> <!-- تكبير عرض الكارت -->
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
                     <div class="card team-card p-5 text-center"> <!-- زيادة الـ Padding الداخلي للكارت -->
-                        <div class="team-img-wrapper mb-4"> <!-- زيادة الـ Margin السفلي للصورة -->
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Gad.jpg" alt="Ahmed Gad">
-                        </div>
+                        <a href="members/ahmed-gad.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-4"> <!-- زيادة الـ Margin السفلي للصورة -->
+                                <img src="photo/Gad.jpg" alt="Ahmed Gad">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Ahmed Gad</h5>
                         <p class="text-primary small fw-semibold mb-3">Software Teame</p>
+                        <a href="members/ahmed-gad.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو 2 -->
-                <div class="col-sm-8 col-md-6 col-lg-4">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
                     <div class="card team-card p-5 text-center">
-                        <div class="team-img-wrapper mb-4">
-                            <img src="photo/gd3.jpeg" alt="Ibraheem Gadaa">
-                        </div>
+                        <a href="members/ibraheem-gadaa.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-4">
+                                <img src="photo/gd3.jpeg" alt="Ibraheem Gadaa">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Ibraheem Gadaa</h5>
                         <p class="text-primary small fw-semibold mb-3">Network Teame</p>
+                        <a href="members/ibraheem-gadaa.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- 3 كارت العضو  -->
-                <div class="col-sm-8 col-md-6 col-lg-4">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
                     <div class="card team-card p-5 text-center">
-                        <div class="team-img-wrapper mb-4">
-                            <img style="object-position: top;" src="photo/Abdallh Ghareb.jpeg" alt="Abdallah Ghareb">
-                        </div>
+                        <a href="members/abdallah-ghareb.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-4">
+                                <img style="object-position: top;" src="photo/Abdallh Ghareb.jpeg"
+                                    alt="Abdallah Ghareb">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Abdallah Ghareb</h5>
                         <p class="text-primary small fw-semibold mb-3">Server Teame</p>
+                        <a href="members/abdallah-ghareb.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- 4 كارت العضو  -->
-                <div class="col-sm-8 col-md-6 col-lg-4">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
                     <div class="card team-card p-5 text-center">
-                        <div class="team-img-wrapper mb-4">
-                            <img style="object-position: top;" src="photo/Safa Ezat.jpeg" alt="Safa Ezat">
-                        </div>
+                        <a href="members/safa-ezat.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-4">
+                                <img style="object-position: top;" src="photo/Safa Ezat.jpeg" alt="Safa Ezat">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Safa Ezat</h5>
                         <p class="text-primary small fw-semibold mb-3">Wireless Teame</p>
+                        <a href="members/safa-ezat.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
@@ -181,264 +260,354 @@
 
 
     <!-- 5. سكشن صور التيم والأسماء (البطل) -->
-    <section id="team" class="py-5 bg-white">
+    <section id="team" class="team-section py-5">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="fw-bold text-dark">Team Members</h2>
+                <span class="section-label d-inline-block mb-2">// team.members</span>
+                <h2 class="fw-bold section-title">Team Members</h2>
             </div>
 
             <!-- الـ Grid المتناسق للكروت -->
             <div class="row g-4 justify-content-center">
 
                 <!-- كارت العضو Aya -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: top;" src="photo/Aya.jpeg" alt="Aya">
-                        </div>
-                        <h5 class="fw-bold text-dark mb-1">Aya</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
+                        <a href="members/aya.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/Aya.jpeg" alt="Aya">
+                            </div>
+                        </a>
+                        <h5 class="fw-bold text-dark mb-1">Aya Mohamad Saleh</h5>
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/aya.html" class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Mariam -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Mariam.jpeg" alt="Mariam">
-                        </div>
-                        <h5 class="fw-bold text-dark mb-1">Mariam</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
+                        <a href="members/mariam.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Mariam.jpeg" alt="Mariam">
+                            </div>
+                        </a>
+                        <h5 class="fw-bold text-dark mb-1">Mariam Ahmed</h5>
                         <p class="text-primary small fw-semibold mb-2">Software member</p>
+                        <a href="members/mariam.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Omnia Abdine -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: top;" src="photo/Omnia Abdine.jpeg" alt="Omnia Abdine">
-                        </div>
+                        <a href="members/omnia-abdine.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/Omnia Abdine.jpeg" alt="Omnia Abdine">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Omnia Abdine</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Software member</p>
-
+                        <a href="members/omnia-abdine.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Ethar -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Ethar.jpeg" alt="Ethar">
-                        </div>
-                        <h5 class="fw-bold text-dark mb-1">Ethar</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
+                        <a href="members/ethar.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Ethar.jpeg" alt="Ethar">
+                            </div>
+                        </a>
+                        <h5 class="fw-bold text-dark mb-1">Ethar Walid</h5>
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
-
+                        <a href="members/ethar.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Razan Mohamed -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Razan Mohamed.jpeg" alt="Razan Mohamed">
-                        </div>
+                        <a href="members/razan-mohamed.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Razan Mohamed.jpeg" alt="Razan Mohamed">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Razan Mohamed</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
-
+                        <a href="members/razan-mohamed.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Reem Blal -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Reem Blal.jpeg" alt="Reem Blal">
-                        </div>
+                        <a href="members/reem-blal.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Reem Blal.jpeg" alt="Reem Blal">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Reem Blal</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/reem-blal.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو  Sara Same -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Sara same.jpeg" alt="Sara Same">
-                        </div>
+                        <a href="members/sara-same.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Sara same.jpeg" alt="Sara Same">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Sara Same</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">software member</p>
+                        <a href="members/sara-same.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> مساهمتي
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو  Habiba Adel -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Habiba Adel.jpeg" alt="Habiba Adel">
-                        </div>
+                        <a href="members/habiba-adel.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Habiba Adel.jpeg" alt="Habiba Adel">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Habiba Adel</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">software member</p>
+                        <a href="members/habiba-adel.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو  Misem Mohamed -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: top;" src="photo/misem Mohamed.jpeg" alt="Misem Mohamed">
-                        </div>
-                        <h5 class="fw-bold text-dark mb-1">Misem Mohamed</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
+                        <a href="members/mysem-mohamed.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/misem Mohamed.jpeg" alt="Mysem Mohamed">
+                            </div>
+                        </a>
+                        <h5 class="fw-bold text-dark mb-1">Maysam Mohamad</h5>
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/mysem-mohamed.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Ahmed Ehab -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Ehab.jpeg" alt="Ahmed Ehab">
-                        </div>
+                        <a href="members/ahmed-ehab.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Ehab.jpeg" alt="Ahmed Ehab">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Ahmed Ehab</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/ahmed-ehab.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Bilal Ahshraf -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Bilal Ashraf.jpeg" alt="Bilal Ahshraf">
-                        </div>
+                        <a href="members/bilal-ashraf.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Bilal Ashraf.jpeg" alt="Bilal Ahshraf">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Bilal Ahshraf</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Software member</p>
+                        <a href="members/bilal-ashraf.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Mohamed Ashraf -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: bottom;" src="photo/mohamed Ashraf.jpeg" alt="Mohamed Ashraf">
-                        </div>
+                        <a href="members/mohamed-ashraf.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: bottom;" src="photo/mohamed Ashraf.jpeg"
+                                    alt="Mohamed Ashraf">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Mohamed Ashraf</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/mohamed-ashraf.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> مساهمتي
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Antonyoth -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: top;" src="photo/Antonyoth.jpeg" alt="Antonyoth Romany">
-                        </div>
+                        <a href="members/antonyoth-romany.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/Antonyoth.jpeg" alt="Antonyoth Romany">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Antonyoth Romany</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
-
+                        <a href="members/antonyoth-romany.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Mohamed Ibraheem -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3" style="object-position: center;">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: bottom;" src="photo/Mohamed Ibraheem.jpeg"
-                                alt="Mohamed Ibraheem">
-                        </div>
+                        <a href="members/mohamed-ibraheem.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: bottom;" src="photo/Mohamed Ibraheem.jpeg"
+                                    alt="Mohamed Ibraheem">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Mohamed Ibraheem</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/mohamed-ibraheem.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> مساهمتي
+                        </a>
                     </div>
                 </div>
 
                 <!-- Marawan sobhe كارت العضو  -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/Marawan sobhe.jpeg" alt="Marawan sobhe">
-                        </div>
+                        <a href="members/marawan-sobhe.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/Marawan sobhe.jpeg" alt="Marawan sobhe">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Marawan sobhe</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/marawan-sobhe.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Ahmed Ghareb -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: top;" src="photo/Ahmed Ghareb.jpeg" alt="Ahmed Ghareb">
-                        </div>
+                        <a href="members/ahmed-ghareb.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/Ahmed Ghareb.jpeg" alt="Ahmed Ghareb">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Ahmed Ghareb</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/ahmed-ghareb.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Zain Mamdoh -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img src="photo/zain Mamdoh.jpeg" alt="Zain Mamdoh">
-                        </div>
-                        <h5 class="fw-bold text-dark mb-1">Zain Mamdoh</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
+                        <a href="members/zain-mamdoh.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img src="photo/zain Mamdoh.jpeg" alt="Zain Mamdoh">
+                            </div>
+                        </a>
+                        <h5 class="fw-bold text-dark mb-1">Zain Al-Din Mamdouh </h5>
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/zain-mamdoh.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Osama Atef -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: top;" src="photo/osama Atef.jpeg" alt="Osama Atef">
-                        </div>
+                        <a href="members/osama-atef.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/osama Atef.jpeg" alt="Osama Atef">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Osama Atef</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Software member</p>
+                        <a href="members/osama-atef.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
 
                 <!-- كارت العضو Adham Safi -->
-                <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card team-card p-4 text-center">
-                        <div class="team-img-wrapper mb-3">
-                            <!-- حط هنا مسار صورتك -->
-                            <img style="object-position: top;" src="photo/Adham Safi.jpeg" alt="Adham Safi">
-                        </div>
+                        <a href="members/adham-safi.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/Adham Safi.jpeg" alt="Adham Safi">
+                            </div>
+                        </a>
                         <h5 class="fw-bold text-dark mb-1">Adham Safi</h5>
-                        <!-- حط هنا مسماك الوظيفة -->
                         <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/adham-safi.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
+                    </div>
+                </div>
+
+                <!-- كارت العضو Mokhtar Ahmed -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card team-card p-4 text-center">
+                        <a href="members/mokhtar-ahmed.html" class="team-img-link">
+                            <div class="team-img-wrapper mb-3">
+                                <img style="object-position: top;" src="photo/Mokhtar Ahmed.jpeg" alt="Mokhtar Ahmed">
+                            </div>
+                        </a>
+                        <h5 class="fw-bold text-dark mb-1">Mokhtar Ahmed</h5>
+                        <p class="text-primary small fw-semibold mb-2">Network member</p>
+                        <a href="members/mokhtar-ahmed.html"
+                            class="btn btn-outline-primary btn-sm rounded-pill team-member-btn">
+                            <i class="bi bi-person-lines-fill me-1"></i> Work on a part
+                        </a>
                     </div>
                 </div>
             </div>
@@ -446,9 +615,10 @@
     </section>
 
     <!-- Footer بسيط ونظيف -->
-    <footer class="py-4 bg-dark text-white-50 text-center fs-7">
+    <footer class="site-footer py-4 text-center">
         <div class="container">
-            <small>© 2026 All rights reserved to the project team - Borg El Arab University of Technology</small>
+            <div class="footer-tech-line mb-3" aria-hidden="true"></div>
+            <small><i class="bi bi-hdd-network me-1"></i> © 2026 Turning Point · Borg El Arab University of Technology</small>
         </div>
     </footer>
 
